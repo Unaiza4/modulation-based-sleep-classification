@@ -21,30 +21,31 @@ Utilities for dataset organization, sequence construction, and cross-validation
 
 Example structure and instructions for reproducing all experiments
 
-<img width="1462" height="943" alt="image" src="https://github.com/user-attachments/assets/0eb8fd54-a440-4ad1-ad94-cb7ff000effd" />
+## Repository Structure
 
-Repository Structure
 │
-├── data/                       # (Optional) Folder placeholder for datasets
+├── data/
+│ └── (optional placeholder for datasets)
 │
 ├── spectrogram_generation/
-│   ├── modulation_python/      # Python scripts for Modulation Spectrograms
-│   │   └── modulation_spectrogram.py
-│   ├── STFT_MATLAB/            # MATLAB STFT generation
-│   │   └── stft_generation.m
-│   └── CWT_MATLAB/             # MATLAB CWT generation (76x60 format)
-│       └── cwt_generation.m
+│ ├── modulation_python/
+│ │ └── modulation_spectrogram.py # Python Modulation Spectrogram generation
+│ │
+│ ├── STFT_MATLAB/
+│ │ └── stft_generation.m # MATLAB STFT (EEGSNet-style)
+│ │
+│ └── CWT_MATLAB/
+│ └── cwt_generation.m # MATLAB CWT (76×60 output)
 │
 ├── src/
-│   ├── modulation_core.py      # Core utilities, dataset loader & EEGSNet-like model
-│   ├── train_eval_modulation.py# Main training/evaluation for Modulation model
-│   ├── train_cnn_baseline.py   # CNN-only baseline model (single file)
-│        
+│ ├── modulation_core.py # Dataset loader, utils, model blocks
+│ ├── train_eval_modulation.py # Main Modulation (EEGSNet-like) training + evaluation
+│ └── train_cnn_baseline.py # CNN-only baseline model
 │
-├── results/                    # Automatically generated training outputs
+├── results/
+│ ├── README.md # Empty placeholder (results auto-generated)
 │
-└── README.md                   # Project documentation
-
+└── README.md # Project documentation
 1. Requirements
 
 Install dependencies:
