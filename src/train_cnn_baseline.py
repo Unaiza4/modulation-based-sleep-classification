@@ -39,11 +39,11 @@ MAX_EPOCHS     = 150
 VAL_EVERY      = 3
 PATIENCE       = 10
 DROPOUT_P      = 0.5
-AUX_WEIGHT     = 0.5          # for CNN-only we set aux_logits = main_logits, so this is effectively 1.5x CE
-                             # you can set this to 0.0 if you want pure single-head loss
+AUX_WEIGHT     = 0.5        
+                            
 IMG_H, IMG_W   = 120, 152
 RESIZE_MODE    = "fixed"      
-MULTIPLE_OF    = 32           # kept for other modes
+MULTIPLE_OF    = 32           
 LR             = 1e-3
 WEIGHT_DECAY   = 1e-4
 NUM_WORKERS    = 4
