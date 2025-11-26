@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+
+data/
+results/
+*.npz
+*.npy
+*.pt
+*.pth
+checkpoints/
+logs/
