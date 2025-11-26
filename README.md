@@ -22,30 +22,8 @@ Utilities for dataset organization, sequence construction, and cross-validation
 Example structure and instructions for reproducing all experiments
 
 ## Repository Structure
+<img width="772" height="502" alt="image" src="https://github.com/user-attachments/assets/e1ba32bd-ccaf-45fd-adef-21dfe92993cd" />
 
-│
-├── data/
-│ └── (optional placeholder for datasets)
-│
-├── spectrogram_generation/
-│ ├── modulation_python/
-│ │ └── modulation_spectrogram.py # Python Modulation Spectrogram generation
-│ │
-│ ├── STFT_MATLAB/
-│ │ └── stft_generation.m # MATLAB STFT (EEGSNet-style)
-│ │
-│ └── CWT_MATLAB/
-│ └── cwt_generation.m # MATLAB CWT (76×60 output)
-│
-├── src/
-│ ├── modulation_core.py # Dataset loader, utils, model blocks
-│ ├── train_eval_modulation.py # Main Modulation (EEGSNet-like) training + evaluation
-│ └── train_cnn_baseline.py # CNN-only baseline model
-│
-├── results/
-│ ├── README.md # Empty placeholder (results auto-generated)
-│
-└── README.md # Project documentation
 1. Requirements
 
 Install dependencies:
@@ -59,17 +37,8 @@ CUDA-enabled GPU recommended (but CPU also supported)
 2. Data Organization
 
 Place your dataset in the following structure:
-DATA_ROOT/
-│
-├── Training_Set/
-│   └── Subject folders (S001, S002, ...)
-├── Validation_Set/
-├── Testing_Set/
-│
-Each subject folder:
-│
-└── {W, N1, N2, N3, R}/
-       └── C4-M1_XXXX.png
+<img width="630" height="334" alt="image" src="https://github.com/user-attachments/assets/1a20f5f3-1961-45e7-b1c4-575ca16dbdb0" />
+
 This structure matches the folder layout used in the experiments.
 3. Spectrogram Generation
 Modulation Spectrogram (Python)
