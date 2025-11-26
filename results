@@ -1,1 +1,9 @@
 
+This directory will be populated automatically with:
+- per-fold training logs
+- confusion matrices
+- accuracy/F1 plots
+- best model checkpoints
+- overall metrics (5-fold)
+
+No results are committed to the repository.
