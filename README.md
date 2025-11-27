@@ -46,14 +46,14 @@ This structure matches the folder layout used in the experiments.
 Modulation Spectrogram (Python)
 STFT & CWT Spectrograms (MATLAB)
 
-5. Training the Models
+4. Training the Models
 A) Modulation Spectrogram + Sequence Model (EEGSNet-like)+ change the dataset and image size, and train using STFT and CWT spectrograms as well.
 B) CNN-Only Baseline
 
-6. Citation
+5. Citation
 
 If you use this code, please cite.
 
-7. License
+6. License
 
 This code is released for academic research purposes only.
