@@ -41,7 +41,7 @@ PATIENCE       = 10
 DROPOUT_P      = 0.5
 AUX_WEIGHT     = 0.5        
                             
-IMG_H, IMG_W   = 120, 152
+IMG_H, IMG_W   =  76 x 60
 RESIZE_MODE    = "fixed"      
 MULTIPLE_OF    = 32           
 LR             = 1e-3
