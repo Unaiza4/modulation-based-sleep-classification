@@ -35,25 +35,19 @@ PyTorch ≥ 1.13
 
 CUDA-enabled GPU recommended (but CPU also supported)
 
-2. Data Organization
 
-Place your dataset in the following structure:
-<img width="630" height="334" alt="image" src="https://github.com/user-attachments/assets/1a20f5f3-1961-45e7-b1c4-575ca16dbdb0" />
-
-This structure matches the folder layout used in the experiments.
-
-3. Spectrogram Generation
+2. Spectrogram Generation
 Modulation Spectrogram (Python)
 STFT & CWT Spectrograms (MATLAB)
 
-4. Training the Models
+3. Training the Models
 A) Modulation Spectrogram + Sequence Model (EEGSNet-like)+ change the dataset and image size, and train using STFT and CWT spectrograms as well.
 B) CNN-Only Baseline
 
-5. Citation
+4. Citation
 
 If you use this code, please cite.
 
-6. License
+5. License
 
 This code is released for academic research purposes only.
