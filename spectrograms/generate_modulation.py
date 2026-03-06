@@ -156,6 +156,9 @@ def modulation_map_pure(
     return Pnorm, f_mod_keep
 
 def save_color(arr01: np.ndarray, out_hw: Tuple[int, int], out_path: str, cmap_name: str = CMAP_NAME):
+    # Fix upside-down spectrogram (equivalent to imshow(origin="lower"))
+    arr01 = np.flipud(arr01)
+
     cmap = cm.get_cmap(cmap_name)
     rgb = (cmap(np.clip(arr01, 0, 1))[:, :, :3] * 255).astype(np.uint8)
     img = Image.fromarray(rgb).resize((out_hw[1], out_hw[0]), resample=Image.BILINEAR)  # (W,H)
